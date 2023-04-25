@@ -34,10 +34,10 @@
         <h3>IA Mário</h3>
         <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Instruções</button>
       </div>
-      <img src="mario.jpg">
+      <img src="mario.jpg" class="marioFoto">
       <br>
       <br>
-      <button class="btn btn-success" onclick="play()" id="start">Jogar</button>
+      <button class="btn btn-success" onclick="startGame()" id="start">Jogar</button>
       <br>
       <br>
       <h3 id="status" class="btn btn-warning"></h3>
@@ -54,13 +54,13 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <button class="close" >&times;</button>
+              <button class="close" data-dismiss="modal" >&times;</button>
               <h4>Instruções</h4>
             </div>
             <div class="modal-body">
-              <img src="left.png">
-              <img src="jump.png">
-              <img src="right.png">
+              <img src="left.png" class="img-responsive instruction-img">
+              <img src="jump.png" class="img-responsive instruction-img">
+              <img src="right.png" class="img-responsive instruction-img">
             </div>
           </div>
         </div>
