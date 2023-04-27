@@ -3,7 +3,7 @@ var marioJump
 var marioCoin
 var marioKick
 var marioDie
-var worldStart
+var world_start
 
 function preload() {
 	marioGameover = loadSound("gameover.wav")
@@ -11,7 +11,7 @@ function preload() {
 	marioCoin = loadSound("coin.wav")
 	marioKick = loadSound("kick.wav")
 	marioDie = loadSound("mariodie.wav")
-	worldStart = loadSound("world_start.wav")
+	world_start = loadSound("world_start.wav")
 	setSprites()
 	MarioAnimation()
 }
@@ -35,14 +35,12 @@ function modelLoaded() {
 	console.log("O modelo foi carregado!")
 }
 
-function getPoses(error, results) {
+function getPoses(results, error) {
 	if (error) {
 		console.log(error)
 	} else if (results.length>0) {
-		console.log(results)
+
 		noseX = results[0].pose.nose.x
 		noseY = results[0].pose.nose.y
-		console.log(noseX)
-		console.log(noseY)
 	}
 }
